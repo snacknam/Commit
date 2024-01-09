@@ -8,21 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		FD7C23D82B4D77F600ADD1E0 /* CommitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7C23D72B4D77F600ADD1E0 /* CommitApp.swift */; };
-		FD7C23DA2B4D77F600ADD1E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7C23D92B4D77F600ADD1E0 /* ContentView.swift */; };
+		FD7C23DA2B4D77F600ADD1E0 /* CommitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7C23D92B4D77F600ADD1E0 /* CommitsView.swift */; };
 		FD7C23DC2B4D77F700ADD1E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7C23DB2B4D77F700ADD1E0 /* Assets.xcassets */; };
 		FD7C23DF2B4D77F700ADD1E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7C23DE2B4D77F700ADD1E0 /* Preview Assets.xcassets */; };
 		FD7C23E62B4D7A4500ADD1E0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FD7C23E52B4D7A4500ADD1E0 /* .gitignore */; };
-		FD7C23E82B4D82CF00ADD1E0 /* CommitDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7C23E72B4D82CF00ADD1E0 /* CommitDay.swift */; };
+		FD7C23E82B4D82CF00ADD1E0 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7C23E72B4D82CF00ADD1E0 /* Commit.swift */; };
+		FD7C23EA2B4D837900ADD1E0 /* CommitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7C23E92B4D837900ADD1E0 /* CommitsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FD7C23D42B4D77F600ADD1E0 /* Commit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Commit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD7C23D72B4D77F600ADD1E0 /* CommitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitApp.swift; sourceTree = "<group>"; };
-		FD7C23D92B4D77F600ADD1E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FD7C23D92B4D77F600ADD1E0 /* CommitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsView.swift; sourceTree = "<group>"; };
 		FD7C23DB2B4D77F700ADD1E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD7C23DE2B4D77F700ADD1E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FD7C23E52B4D7A4500ADD1E0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		FD7C23E72B4D82CF00ADD1E0 /* CommitDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitDay.swift; sourceTree = "<group>"; };
+		FD7C23E72B4D82CF00ADD1E0 /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
+		FD7C23E92B4D837900ADD1E0 /* CommitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +58,9 @@
 			isa = PBXGroup;
 			children = (
 				FD7C23D72B4D77F600ADD1E0 /* CommitApp.swift */,
-				FD7C23D92B4D77F600ADD1E0 /* ContentView.swift */,
-				FD7C23E72B4D82CF00ADD1E0 /* CommitDay.swift */,
+				FD7C23D92B4D77F600ADD1E0 /* CommitsView.swift */,
+				FD7C23E92B4D837900ADD1E0 /* CommitsViewModel.swift */,
+				FD7C23E72B4D82CF00ADD1E0 /* Commit.swift */,
 				FD7C23E52B4D7A4500ADD1E0 /* .gitignore */,
 				FD7C23DB2B4D77F700ADD1E0 /* Assets.xcassets */,
 				FD7C23DD2B4D77F700ADD1E0 /* Preview Content */,
@@ -144,9 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD7C23DA2B4D77F600ADD1E0 /* ContentView.swift in Sources */,
+				FD7C23DA2B4D77F600ADD1E0 /* CommitsView.swift in Sources */,
+				FD7C23EA2B4D837900ADD1E0 /* CommitsViewModel.swift in Sources */,
 				FD7C23D82B4D77F600ADD1E0 /* CommitApp.swift in Sources */,
-				FD7C23E82B4D82CF00ADD1E0 /* CommitDay.swift in Sources */,
+				FD7C23E82B4D82CF00ADD1E0 /* Commit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

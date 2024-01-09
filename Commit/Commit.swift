@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CommitDay: Identifiable {
+struct Commit: Identifiable {
     let id = UUID()
     let date: Date
     let commitCount: Int

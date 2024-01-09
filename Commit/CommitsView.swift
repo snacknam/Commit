@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct CommitsView: View {
     var body: some View {
         
         let columns = [
@@ -34,5 +34,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    CommitsView()
 }
