@@ -22,25 +22,36 @@ struct CommitsView: View {
         ZStack {
             Color(.background)
                 .ignoresSafeArea()
-            VStack(alignment: .leading, spacing: 0) {
-                Text("9 January")
-                    .font(.system(size: 24, weight: .light))
-                    .foregroundStyle(Color(.gray0))
-                Text("commits")
-                    .font(.system(size: 64, weight: .thin))
-                    .frame(height: 56)
-                    .padding(.bottom, 32)
-                LazyVGrid(columns: columns) {
-                    ForEach(0..<35, id: \.self) { index in
-                        RoundedRectangle(cornerRadius: 16)
-                            .frame(width: 48, height: 48)
-                            .foregroundStyle(Color.randomCommitColor())
+            ScrollView {
+                VStack(alignment: .leading, spacing: 32) {
+                    HStack(alignment: .top) {
+                        VStack(alignment: .leading, spacing: 0) {
+                            Text("9 January")
+                                .font(.system(size: 24, weight: .light))
+                                .foregroundStyle(Color(.gray0))
+                            Text("commits")
+                                .font(.system(size: 64, weight: .thin))
+                                .frame(height: 56)
+                        }
+                        Spacer()
+                        Image("profile")
+                            .resizable()
+                            .frame(width: 64, height: 64)
+                            .clipShape(Circle())
                     }
+                    LazyVGrid(columns: columns) {
+                        ForEach(0..<49, id: \.self) { index in
+                            RoundedRectangle(cornerRadius: 16)
+                                .frame(width: 48, height: 48)
+                                .foregroundStyle(Color.randomCommitColor())
+                        }
+                    }
+                    Spacer()
                 }
-                Spacer()
+                .padding(.horizontal, 8)
+                .padding(.top, 16)
             }
-            .padding(.horizontal, 8)
-            .padding(.top, 24)
+            .scrollIndicators(.hidden)
         }
     }
 }
