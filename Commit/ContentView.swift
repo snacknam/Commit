@@ -9,13 +9,27 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        
+        let columns = [
+            GridItem(.flexible()),
+            GridItem(.flexible()),
+            GridItem(.flexible()),
+            GridItem(.flexible()),
+            GridItem(.flexible()),
+            GridItem(.flexible()),
+            GridItem(.flexible())
+        ]
+        
+        VStack(alignment: .leading) {
+            Text("commits")
+                .font(.system(size: 72, weight: .thin))
+            LazyVGrid(columns: columns) {
+                ForEach(0..<28, id: \.self) { index in
+                    Circle()
+                        .foregroundStyle(.white)
+                }
+            }
         }
-        .padding()
     }
 }
 
