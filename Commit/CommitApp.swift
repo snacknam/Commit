@@ -11,7 +11,7 @@ import SwiftUI
 struct CommitApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CommitsView()
         }
     }
 }
